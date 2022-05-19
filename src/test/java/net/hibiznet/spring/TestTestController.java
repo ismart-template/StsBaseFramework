@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class TestController {
+public class TestTestController {
      
-	private static final Logger logger = LoggerFactory.getLogger(TestController.class);
+	private static final Logger logger = LoggerFactory.getLogger(TestTestController.class);
      
     @RequestMapping(value="/interceptorTest")
     public ModelAndView interceptorTest() throws Exception{
