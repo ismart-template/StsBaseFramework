@@ -165,7 +165,8 @@ public class CmmProperties {
 	private static Properties loadPropertiesFromFile(String fileName) {
 		Properties props = new Properties();
 
-		try (FileInputStream fis = new FileInputStream(WebUtil.filePathBlackList(fileName));
+		try (
+			FileInputStream fis = new FileInputStream(WebUtil.filePathBlackList(fileName));
 			BufferedInputStream bis = new BufferedInputStream(fis);) {
 			props.load(bis);
 		} catch (FileNotFoundException fne) {
