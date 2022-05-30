@@ -32,11 +32,12 @@ import net.hibiznet.comm.AbstractMapper;
  *   2016. 5. 11.   장동한        myBatis 방식 적용
  * </pre>
  */
+@SuppressWarnings("unchecked")
 public abstract class ComAbstractDAO extends AbstractMapper{
 
 	private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
 	
-	@Resource(name="egov.sqlSession")
+	@Resource(name="base.sqlSession")
 	public void setSqlSessionFactory(SqlSessionFactory sqlSession) {
 		super.setSqlSessionFactory(sqlSession);
 	}
